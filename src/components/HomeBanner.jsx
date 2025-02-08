@@ -1,4 +1,4 @@
-import Banner from "../assets/hexnode-kiosk (2).webp"
+import Banner from "../assets/hexnode-kiosks.webp"
 function HomeBanner() {
   return (
     <div className="h-screen flex items-center bg-[#0B0E17] text-white ">
@@ -27,9 +27,7 @@ function HomeBanner() {
           {/* Right Image */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src={Banner
-                
-              }
+              src={Banner}
               alt="Hexnode Kiosk"
               className="max-w-full h-auto"
             />
