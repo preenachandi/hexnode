@@ -5,17 +5,14 @@ import TestimonialSliders from "../assets/justin-modrak.webp";
 import TestimonialSliders2 from "../assets/dalibor-kruljac.webp";
 import TestimonialSliders3 from "../assets/chris-robinson.webp";
 
-
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Handlers for navigation
   const prevSlide = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
     );
   };
-
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
@@ -24,7 +21,7 @@ const TestimonialSlider = () => {
   };
 
   // Testimonial Data
-const testimonials = [
+  const testimonials = [
     {
       image: TestimonialSliders,
       quote: "Hexnode is of great value. Works great with Android and iOS!",
@@ -34,17 +31,18 @@ const testimonials = [
     },
     {
       image: TestimonialSliders2,
-      quote: "Most complete MDM solution I found, and I tested many of them, including major names",
+      quote:
+        "Most complete MDM solution I found, and I tested many of them, including major names",
       name: "Sophia Lee",
       role: "IT Manager",
       company: "Tech Solutions Inc.",
     },
     {
       image: TestimonialSliders3,
-            quote: "An excellent platform for kiosk management. Highly recommend!",
-            name: "Michael Brown",
-            role: "Network Admin",
-            company: "Global Enterprises",
+      quote: "An excellent platform for kiosk management. Highly recommend!",
+      name: "Michael Brown",
+      role: "Network Admin",
+      company: "Global Enterprises",
     },
   ];
 
@@ -55,7 +53,6 @@ const testimonials = [
       </h2>
 
       <div className="flex items-center justify-center gap-2 md:gap-4 mb-16">
-        {/* Left Arrow */}
         <button
           onClick={prevSlide}
           className="bg-white p-3 rounded-md shadow-md hover:bg-gray-100 transition "
@@ -63,9 +60,7 @@ const testimonials = [
           <ChevronLeft className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
         </button>
 
-        {/* Testimonial Card */}
         <div className="flex flex-col md:flex-row bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-3xl md:max-w-4xl">
-          {/* Image Section */}
           <div className="w-full md:w-1/3">
             <img
               src={testimonials[currentIndex].image}
@@ -74,7 +69,6 @@ const testimonials = [
             />
           </div>
 
-          {/* Content Section */}
           <div className="w-full md:w-2/3 p-4 md:p-6 text-center md:text-left">
             <p className="text-lg md:text-xl font-medium text-gray-900 pt-8 pb-8">
               {testimonials[currentIndex].quote}
@@ -92,7 +86,6 @@ const testimonials = [
           </div>
         </div>
 
-        {/* Right Arrow */}
         <button
           onClick={nextSlide}
           className="bg-white p-3 rounded-md shadow-md hover:bg-gray-100 transition"
@@ -101,7 +94,7 @@ const testimonials = [
         </button>
       </div>
 
-      <LogoSlider/>
+      <LogoSlider />
     </section>
   );
 };

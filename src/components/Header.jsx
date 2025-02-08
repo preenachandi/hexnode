@@ -5,7 +5,6 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Scroll Event Listener
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -26,7 +25,6 @@ function Header() {
         ${isScrolled ? "bg-white" : "bg-[#0B0E17]"} 
         hover:bg-white`}
     >
-      {/* Logo */}
       <h1
         className={`text-3xl font-semibold transition-colors duration-500  ${
           isScrolled ? "text-black" : "text-white"
@@ -35,14 +33,12 @@ function Header() {
         hexnode
       </h1>
 
-      {/* Desktop Button (Hidden on Mobile) */}
       <div className="hidden md:flex">
         <button className="bg-red-600 text-white text-sm md:text-base px-4 py-2 rounded-md hover:bg-red-700 transition duration-300">
           14 DAY FREE TRIAL
         </button>
       </div>
 
-      {/* Mobile Menu Icon */}
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}

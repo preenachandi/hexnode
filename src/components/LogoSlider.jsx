@@ -1,4 +1,3 @@
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,8 +17,7 @@ const LogoSlider = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerPadding: "0px", 
-   
+    centerPadding: "0px",
   };
 
   return (
@@ -28,7 +26,7 @@ const LogoSlider = () => {
         <Slider {...settings}>
           {[
             LogoSliders,
-          
+
             LogoSliders2,
             LogoSliders3,
             LogoSliders4,
@@ -36,7 +34,10 @@ const LogoSlider = () => {
             LogoSliders6,
             LogoSliders7,
           ].map((logo, index) => (
-            <div key={index} className="!m-0 !p-0 flex justify-center items-center">
+            <div
+              key={index}
+              className="!m-0 !p-0 flex justify-center items-center"
+            >
               <img
                 src={logo}
                 alt={`Logo ${index + 1}`}

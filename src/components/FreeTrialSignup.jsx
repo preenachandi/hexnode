@@ -18,7 +18,7 @@ const FreeTrialSignup = () => {
         </div>
 
         <p className="text-gray-400 text-sm">
-          No credit cards required.{' '}
+          No credit cards required.{" "}
           <a href="#" className="text-red-500 hover:underline">
             Request a demo &rarr;
           </a>

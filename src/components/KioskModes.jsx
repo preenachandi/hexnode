@@ -96,7 +96,6 @@ export default function KioskModes() {
               }`}
           >
             {tab.label}
-
           </button>
         ))}
       </div>
@@ -111,7 +110,7 @@ export default function KioskModes() {
             {tabContents[activeTab]?.points.map((point, index) => (
               <li key={index} className="flex items-start gap-3 text-base">
                 <span className="text-green-500 text-xl">
-                <IoCheckmark />
+                  <IoCheckmark />
                 </span>
                 <span>{point}</span>
               </li>
@@ -128,11 +127,13 @@ export default function KioskModes() {
         </div>
       </div>
 
-      {/* Mobile Accordion View */}
+      {/* Mobile View */}
       <div className="md:hidden space-y-4">
         {tabs.map((tab) => (
-          <div key={tab.id} className="border-b border-[#e5e7eb]  rounded-lg overflow-hidden ">
-
+          <div
+            key={tab.id}
+            className="border-b border-[#e5e7eb]  rounded-lg overflow-hidden "
+          >
             <button
               onClick={() => toggleAccordion(tab.id)}
               className={`w-full flex justify-between items-center px-4 py-3 text-base font-medium transition-all
@@ -168,7 +169,7 @@ export default function KioskModes() {
                   {tabContents[tab.id]?.points.map((point, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm">
                       <span className="text-green-500">
-                      <IoCheckmark />
+                        <IoCheckmark />
                       </span>
                       {point}
                     </li>
