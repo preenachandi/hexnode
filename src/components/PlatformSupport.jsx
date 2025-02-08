@@ -1,14 +1,17 @@
-
-
-
+import PlatformSupports from "../assets/android.svg";
+import PlatformSupports2 from "../assets/windows.svg";
+import PlatformSupports3 from "../assets/ios.svg";
+import PlatformSupports4 from "../assets/android-tv.svg";
+import PlatformSupports5 from "../assets/apple-tv.svg";
+import PlatformSupports6 from "../assets/amazon-fire.webp"
 const PlatformSupport = () => {
     const platforms = [
-        { name: "Android", icon: "../src/assets/android.svg"},
-        { name: "Windows", icon: "../src/assets/windows.svg" },
-        { name: "iOS", icon: "../src/assets/ios.svg" },
-        { name: "Android TV", icon: "../src/assets/android-tv.svg" },
-        { name: "Apple TV", icon: "../src/assets/apple-tv.svg" },
-        { name: "Fire TV", icon: "../src/assets/amazon-fire.webp" },
+        { name: "Android", icon: PlatformSupports },
+        { name: "Windows", icon: PlatformSupports2 },
+        { name: "iOS", icon: PlatformSupports3 },
+        { name: "Android TV", icon: PlatformSupports4 },
+        { name: "Apple TV", icon:PlatformSupports5 },
+        { name: "Fire TV", icon: PlatformSupports6 },
       ];
       
   return (
