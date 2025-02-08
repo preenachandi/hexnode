@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import LogoSlider from "./LogoSlider";
-
+import TestimonialSliders from "../assets/justin-modrak.webp";
+import TestimonialSliders2 from "../assets/dalibor-kruljac.webp";
+import TestimonialSliders3 from "../assets/chris-robinson.webp";
 
 
 const TestimonialSlider = () => {
@@ -14,6 +16,7 @@ const TestimonialSlider = () => {
     );
   };
 
+
   const nextSlide = () => {
     setCurrentIndex((prev) =>
       prev === testimonials.length - 1 ? 0 : prev + 1
@@ -23,21 +26,21 @@ const TestimonialSlider = () => {
   // Testimonial Data
 const testimonials = [
     {
-      image: "../src/assets/justin-modrak.webp",
+      image: TestimonialSliders,
       quote: "Hexnode is of great value. Works great with Android and iOS!",
       name: "Justin Modrak",
       role: "Technology Coordinator",
       company: "East Troy Community School District",
     },
     {
-      image: "../src/assets/dalibor-kruljac.webp",
+      image: TestimonialSliders2,
       quote: "Most complete MDM solution I found, and I tested many of them, including major names",
       name: "Sophia Lee",
       role: "IT Manager",
       company: "Tech Solutions Inc.",
     },
     {
-      image: "../src/assets/chris-robinson.webp",
+      image: TestimonialSliders3,
             quote: "An excellent platform for kiosk management. Highly recommend!",
             name: "Michael Brown",
             role: "Network Admin",

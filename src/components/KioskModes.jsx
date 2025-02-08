@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { IoCheckmark } from "react-icons/io5";
+import KioskMode from "../assets/single-app-kios-image.webp";
+import KioskMode2 from "../assets/multi-app-kiosk-image.webp";
+import KioskMode3 from "../assets/web-based-kiosk-image.webp";
+import KioskMode4 from "../assets/digital-signage-kiosk-image.webp";
+import KioskMode5 from "../assets/asam-kiosk-image.webp";
 export default function KioskModes() {
   const [activeTab, setActiveTab] = useState(1);
   const [openAccordion, setOpenAccordion] = useState(1);
@@ -27,7 +32,7 @@ export default function KioskModes() {
         "Use Hexnode’s Advanced Kiosk settings for additional restrictions or expanded device functionalities while in kiosk mode.",
         "Empower your administrators with full control over the kiosk devices.",
       ],
-      image: "../src/assets/single-app-kios-image.webp",
+      image: KioskMode,
     },
     2: {
       title: "Elevate efficiency with Multi-App Kiosk",
@@ -37,7 +42,7 @@ export default function KioskModes() {
         "Allow necessary device settings while retaining control.",
         "Simplify device management while enhancing user productivity.",
       ],
-      image: "../src/assets/multi-app-kiosk-image.webp",
+      image: KioskMode2,
     },
     3: {
       title: "Explore the new way to manage web apps and websites",
@@ -47,7 +52,7 @@ export default function KioskModes() {
         "Tailor your experience to match your unique use case.",
         "Take full control with remote debugging and custom toolbar options.",
       ],
-      image: "../src/assets/web-based-kiosk-image.webp",
+      image: KioskMode3,
     },
     4: {
       title: "Capture attention with Digital Signage Kiosks",
@@ -57,7 +62,7 @@ export default function KioskModes() {
         "Customize media with trimming, muting, and background music.",
         "Advertise your brand aesthetics effectively.",
       ],
-      image: "../src/assets/digital-signage-kiosk-image.webp",
+      image: KioskMode4,
     },
     5: {
       title: "Unlock the power of Autonomous Single App Mode (ASAM)",
@@ -67,7 +72,7 @@ export default function KioskModes() {
         "Create focused, secure digital environments.",
         "Effortlessly configure ASAM for enhanced user experiences.",
       ],
-      image: "../src/assets/asam-kiosk-image.webp",
+      image: KioskMode5,
     },
   };
 
