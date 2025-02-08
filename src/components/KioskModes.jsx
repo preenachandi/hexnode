@@ -88,7 +88,7 @@ export default function KioskModes() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`md:text-xl font-medium transition  last:border-r-0 py-6 px-10
+            className={`md:text-xl font-medium transition  last:border-r-0 py-6 w-full
               ${
                 activeTab === tab.id
                   ? "bg-[#040B18] text-white border-b-4 border-[#e5e7eb]"
