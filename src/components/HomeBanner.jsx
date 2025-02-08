@@ -26,7 +26,7 @@ function HomeBanner() {
           {/* Right Image */}
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="../src/assets/hexnode-kiosk (2).webp"
+              src="../src/assets/jj.jpg"
               alt="Hexnode Kiosk"
               className="max-w-full h-auto"
             />
